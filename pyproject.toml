@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "nibades-alert"
+version = "0.0.1"
+description = "TBD"
+authors = [
+    "Andrii Savchenko <andrii@labster.com>",
+    "Kostiantyn Savchenko <savchenko.kostya777@gmail.com>"
+]
+
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">= 3.11,<3.13"
+fastapi = ">= 0.116.1"
+uvicorn = {version = ">=0.35.0", extras = ["standard"]}
+psycopg2-binary = ">=2.9.10"
+sqlalchemy = ">=2.0.42"
+dotenv = ">=0.9.9"
+
+[tool.poetry.group.dev.dependencies]
+black = ">=24.4.2"
+isort = ">=5.13.2"
+pytest = ">=8.3.1"
+mypy = ">=1.16.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
